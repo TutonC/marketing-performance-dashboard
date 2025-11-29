@@ -1,191 +1,97 @@
 # marketing-performance-dashboard
 Power BI dashboard analyzing global marketing performance, ROI, expenditure and profitability.
 
-1. 📊 Project Title / Headline
+# 📊 Marketing Pulse: Global Campaign Performance & ROI Dashboard
 
-Marketing Pulse: Global Campaign Performance & ROI Dashboard
-An interactive Power BI dashboard designed to analyze global marketing spend, revenue, profit, and campaign ROI across regions and campaign types for data-driven decision-making.
+![Power BI](https://img.shields.io/badge/Power%20BI-Data%20Analytics-F2C811?logo=powerbi&logoColor=black)
+![DAX](https://img.shields.io/badge/DAX-Measures-blue)
+![CSV Data](https://img.shields.io/badge/Data-CSV%20Files-green)
+![Status](https://img.shields.io/badge/Project-Completed-success)
 
-2. 📝 Short Description / Purpose
+An interactive **Power BI dashboard** designed to analyze global marketing spend, revenue, profit, and campaign ROI across regions and campaign types to support data-driven marketing decisions.
 
-The Marketing Pulse Dashboard is a comprehensive business intelligence solution built in Power BI to evaluate the effectiveness of marketing campaigns across different regions and channels. It enables stakeholders to monitor financial performance, compare campaign efficiency, and identify high-performing and underperforming marketing strategies to improve overall profitability.
+---
 
-3. 🛠 Tech Stack
+## 📚 Table of Contents
+- [📊 Project Overview](#-project-overview)
+- [📝 Purpose](#-purpose)
+- [🛠 Tech Stack](#-tech-stack)
+- [🗂 Data Source](#-data-source)
+- [⭐ Features](#-features)
+- [📈 Key Visuals](#-key-visuals)
+- [💼 Business Impact](#-business-impact)
+- [🖼 Dashboard Preview](#-dashboard-preview)
+- [📬 Contact](#-contact)
 
-The dashboard was built using the following tools and technologies:
+---
 
-  📊 Power BI Desktop – Main platform for building interactive reports and dashboards
-  📂 Power Query – Used for data cleaning, transformation, and preparation
-  🧠 DAX (Data Analysis Expressions) – Used to create calculated measures such as Total Revenue, Total Spend, Total Profit, and Average ROI
-  🧩 Data Modeling – Relationships built between campaign and region tables for dynamic filtering
-  📁 File Format – .pbix for development and .png for dashboard preview
+## 📊 Project Overview
 
-4. 🗂 Data Source
+**Marketing Pulse** is a business intelligence dashboard built using **Power BI**. It centralizes marketing performance insights, allowing users to evaluate ROI, profitability, and channel effectiveness across global regions.
 
-The dashboard is powered by three interconnected CSV files:
+---
 
-📁 1. marketing campaign details.csv - This dataset contains campaign dimension data, including:
+## 📝 Purpose
 
-    Campaign Name / Campaign ID
-    Campaign Type (Digital / Traditional)
-    Marketing Channel (Influencer, Social Media, TV, Email, Radio, etc.)
-    Used to categorize campaigns and enable campaign-based filtering.
+The dashboard enables organizations to:
 
-📁 2. marketing campaign performance.csv - This is the main fact table used for analysis and includes:
+- Evaluate marketing campaign performance  
+- Monitor global and regional profitability  
+- Identify high-ROI vs. low-ROI campaigns  
+- Optimize digital vs. traditional marketing spend  
+- Support strategic marketing decisions through data visualization  
 
-    Campaign Name / Campaign ID
-    Total Spend
-    Total Revenue
-    ROI
-    Calculated Profit (Revenue − Spend)
-      
-      This dataset feeds:
-      KPI cards
-      Campaign spend vs. ROI analysis
-      Total ROI by campaign rankings
+---
 
-📁 3. region performance.csv - This dataset contains regional marketing performance, including:
+## 🛠 Tech Stack
 
-    Region Name
-    Regional Total Spend
-    Regional Total Revenue
-    Regional Profit
-      
-      This data is used to analyze and compare:
-      Marketing performance by geographical region
-      Regional profitability and revenue contribution
+- **📊 Power BI Desktop** – Dashboard development  
+- **📂 Power Query** – Data cleaning, transformation, and preparation  
+- **🧠 DAX Measures** – Profit, Revenue, Spend, ROI, KPIs  
+- **🧩 Data Modeling** – Relationship building across datasets  
+- **📁 File Formats** – `.pbix` for dashboard, `.csv` for data, `.png` for preview  
 
-🔗 Data Modeling Approach
+---
 
-The Marketing Campaign Performance table acts as the central fact table.
-The Marketing Campaign Details table is linked using Campaign Name/ID.
-The Region Performance table is linked using Region.
-The relationships enable interactive cross-filtering across all visuals.
+## 🗂 Data Source
 
-5. ⭐ Features / Highlights
-🔍 Business Problem
+**Source:** Internal Structured Marketing Dataset (CSV Files)
 
-Organizations invest large amounts of money across multiple marketing channels and regions, but often lack a unified view to:
+The dashboard uses **three interconnected datasets**:
 
-Identify which campaigns generate the highest ROI
+---
 
-Understand regional profitability
+### 📁 `marketing campaign details.csv`
+Campaign metadata including:
+- Campaign Name / ID  
+- Campaign Type (Digital / Traditional)  
+- Marketing Channel (Influencer, Social Media, TV, Email, etc.)
 
-Track overall marketing efficiency
+Used for campaign segmentation and filtering.
 
-Optimize digital vs. traditional marketing spending
+---
 
-Without centralized analytics, marketing decisions become fragmented and inefficient.
+### 📁 `marketing campaign performance.csv`
+Main fact table containing:
+- Total Spend  
+- Total Revenue  
+- ROI  
+- Profit (Revenue − Spend)
 
-🎯 Goal of the Dashboard
+Feeds KPI cards, ROI rankings, and performance visuals.
 
-To provide a centralized, interactive, and executive-ready dashboard that:
+---
 
-Monitors global marketing performance in real time
+### 📁 `region performance.csv`
+Regional performance table:
+- Region  
+- Regional Spend  
+- Regional Revenue  
+- Regional Profit  
 
-Compares spend, revenue, and profit across regions
+Used for geographic comparisons.
 
-Measures campaign effectiveness using ROI
+---
 
-Helps optimize marketing budgets and resource allocation
+### 🔗 Data Modeling Structure
 
-Supports strategic and operational marketing decisions
-
-📈 Walkthrough of Key Visuals
-✅ Top KPI Cards
-
-Total Revenue: 42.5M
-
-Total Spend: 25.7M
-
-Average ROI: 0.68
-
-Total Profit: 16.8M
-
-Best Performing Campaign: Influencer Marketing
-
-These KPIs provide an instant financial performance overview.
-
-🌍 Total Spend & Revenue by Region (Stacked Column Chart)
-
-Regions analyzed:
-
-Africa
-
-Asia
-
-North America
-
-Europe
-
-Oceania
-
-South America
-
-This visual enables direct comparison of spending efficiency and profitability across regions.
-
-📣 Total Spend vs. Average ROI by Campaign (Combo Chart)
-
-Campaigns included:
-
-Search Engine Ads
-
-Social Media Ads
-
-Content Marketing
-
-Influencer Marketing
-
-Radio Ads
-
-Email Marketing
-
-TV Commercials
-
-Billboards
-
-This chart highlights how Influencer Marketing achieves the highest ROI despite moderate spending.
-
-🏆 Total ROI by Campaign (Horizontal Bar Chart)
-
-Campaign ranking by total ROI:
-
-Influencer Marketing – 137 (Highest)
-
-Social Media Ads – 88
-
-Search Engine Ads – 88
-
-Content Marketing – 82
-
-Radio Ads – 82
-
-Billboards – 78
-
-Email Marketing – 70
-
-TV Commercials – 51 (Lowest)
-
-📊 Campaign Type Distribution (Pie Chart)
-
-Digital Campaigns: 62.5%
-
-Traditional Campaigns: 37.5%
-
-Shows the organization’s strategic emphasis on digital marketing.
-
-🎯 Sum & Average ROI Gauge
-
-Displays a combined ROI performance value of 676.26, representing overall campaign effectiveness.
-
-💼 Business Impact & Insights
-
-Budget Reallocation: High returns from Influencer and Social Media campaigns justify increased digital ad spend.
-
-Regional Growth Opportunities: Africa and North America show strong profitability potential.
-
-Digital Strategy Validation: Over 60% of campaigns are digital, supporting modern marketing trends.
-
-Profit Optimization: Clear visibility into 16.8M total profit supports executive decision-making.
-
-Cost Control: Low ROI from TV Commercials and Billboards signals areas for optimization.
